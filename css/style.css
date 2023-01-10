@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*
+## Layout
+
+The designs were created to the following widths:
+*/
+  --WidthMobile: 375px;
+  --WidthDesktop: 1440px;
+  /*
+## Colors
+
+### Primary
+*/
+  --ColorCyan: hsl(179, 53%, 43%);
+  --ColorCyanLight: hsla(179, 47%, 52%);
+  --ColorBrightYellow: hsl(71, 73%, 54%);
+  /*
+### Neutral
+*/
+  --ColorLightGray: hsl(204, 43%, 93%);
+  --ColorGrayishBlue: hsl(218, 22%, 67%);
+  /*
+## Typography
+
+### Body Copy
+*/
+  --FontSize: 16px;
+  /*
+### Font
+*/
+  --FontFamily: "Karla", sans-serif;
+  --FontWeightRegular: 400;
+  --FontWeightBold:700;
+}
+
+body {
+  width: 340px;
+  background: var(--ColorLightGray);
+  margin: 40px auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--FontFamily);
+  padding: 0 5px;
+}
+
+.main_container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+  padding:0;
+  box-shadow: 1px 1px 15px 0px rgba(150,150,150,0.5);
+}
+/* SECTION ONE*/
+.main_container__section_container_join {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  padding:40px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.main_container__section_container__join__title{
+    color:var(--ColorCyan)
+}
+.main_container__section_container__join__subtitle{
+    font-size: var(--FontSize);
+    color:var(--ColorBrightYellow);
+}
+.main_container__section_container__join__description{
+    width:310px;
+    font-size: var(--FontSize);
+    color:var(--ColorGrayishBlue);
+    line-height: 30px;
+}
+/* SECTION TWO*/
+.main_container__section_container__plan{
+    background:var(--ColorCyan);
+    height:auto;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:40px 20px;
+}
+.main_container__section_container__plan__title{
+    width:310px;
+}
+.main_container__section_container__plan__price_container{
+    width:100%;
+}
+.main_container__section_container__plan__price_container__text{
+    height:40px;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap:10px;
+    font-weight: var(--FontWeightBold);
+}
+.main_container__section_container__plan__price_container__text__span{
+    font-size: var(--FontSize);
+    color:var(--ColorLightGray);
+    font-weight: var(--FontWeightRegular);
+}
+.main_container__section_container__plan__description_container{
+    display: flex;
+    flex-direction: column;
+
+}
+.main_container__section_container__plan__description_container__text{
+    color:var(--ColorLightGray);
+    margin-top: 10px;;
+}
+.main_container__section_container__plan__description_container__button{
+    margin-top: 30px;
+    height:50px;
+    width:300px;
+    border-radius: 5px;
+    border: none;
+    background:var(--ColorBrightYellow);
+    font-size: 1.1rem;
+    font-family: var(--FontFamily);
+    font-weight: var(--FontWeightBold);
+    color:var(--ColorLightGray);
+    box-shadow: 0px 5px 10px 0px rgba(42, 42, 42, 0.5);
+}
+/* SECTION TRHEE*/
+.main_container__section_container__detail{
+    background:var(--ColorCyanLight);
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:30px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.main_container__section_container__detail__title{
+    color:white;
+    font-weight: var(--FontWeightBold);
+    width:310px;
+    
+}
+.main_container__section_container__detail__list{
+
+    color:var(--ColorLightGray);
+    list-style: none;
+
+}
+.main_container__section_container__detail__list__item{
+    font-weight: var(--FontWeightRegular);
+    color:var(--ColorLightGray);
+    margin: 5px 0;
+    font-size: 0.9rem;
+
+}
+/* Frontend Mentor Attribution*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
